@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
-const BookinkSchema = new mongoose.Schema({
-    data: String,
+const BookingSchema = new mongoose.Schema({
+    date: String,
     approved: Boolean,
     user: {
         type: mongoose.Schema.Types.ObjectId,
@@ -13,4 +13,4 @@ const BookinkSchema = new mongoose.Schema({
     },
 })
 
-module.exports = mongoose.model('Booking', BookinkSchema)
+module.exports = mongoose.model('Booking', BookingSchema)

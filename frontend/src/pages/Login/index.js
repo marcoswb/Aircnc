@@ -7,11 +7,11 @@ export default function Login({ history }) {
     async function handleSubmit(event) {
         event.preventDefault()
 
-        // const response = await api.post('/sessions', {email})
+        const response = await api.post('/sessions', {email})
 
-        // const { _id } = response.data
+        const { _id } = response.data
 
-        // localStorage.setItem("user", _id)
+        localStorage.setItem("user", _id)
 
         history.push('/dashboard')
     }
